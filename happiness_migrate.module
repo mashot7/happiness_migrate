@@ -1,0 +1,10 @@
+<?php
+
+use Personnummer\Personnummer;
+
+/**
+ * Implements hook_page_attachments().
+ */
+function happiness_migrate_page_attachments(array &$attachments) {
+
+}

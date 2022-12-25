@@ -1,0 +1,27 @@
+id: d7_happiness_migrate
+label: Happiness migrate
+migration_group: happiness
+migration_tags:
+  - Drupal 7
+source:
+  plugin: d7_node
+  node_type: person
+
+destination:
+  plugin: entity:node
+  default_bundle: person
+
+process:
+  field_pin:
+    - plugin: transform_value
+      source: field_pin
+  status:
+    - plugin: default_value
+      default_value: 1
+  uid:
+    - plugin: default_value
+      default_value: 1
+  created: created
+  changed: changed
+  title: title
+
