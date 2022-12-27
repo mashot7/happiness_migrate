@@ -19,8 +19,8 @@ class PersonalNumberService {
    * @throws \Exception
    */
   public function transform_ssn(string $ssn) {
-    $parts = $this->separate_ssn_parts($ssn);
     if ($this->validate_ssn($ssn)) {
+      $parts = $this->separate_ssn_parts($ssn);
       return [
         'status' => TRUE,
         'value' => $this->generate_long_ssn($parts),
