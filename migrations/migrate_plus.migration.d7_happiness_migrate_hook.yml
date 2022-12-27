@@ -1,4 +1,4 @@
-id: d7_happiness_migrate
+id: d7_happiness_migrate_hook
 label: Happiness migrate
 migration_group: happiness
 migration_tags:
@@ -12,15 +12,13 @@ destination:
   default_bundle: person
 
 process:
-  field_pin:
-    - plugin: transform_value
-      source: field_pin
-  status:
-    - plugin: default_value
-      default_value: 1
+#  status:
+#    - plugin: default_value
+#      default_value: 1
   uid:
     - plugin: default_value
       default_value: 1
+#  field_pin: field_pin
   created: created
   changed: changed
   title: title

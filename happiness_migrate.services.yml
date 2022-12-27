@@ -1,0 +1,4 @@
+services:
+  happiness_migrate.personal_number_service:
+    class: Drupal\happiness_migrate\Services\PersonalNumberService
+    arguments: [ ]
