@@ -12,13 +12,9 @@ destination:
   default_bundle: person
 
 process:
-#  status:
-#    - plugin: default_value
-#      default_value: 1
   uid:
     - plugin: default_value
       default_value: 1
-#  field_pin: field_pin
   created: created
   changed: changed
   title: title
