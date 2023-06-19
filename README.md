@@ -1,4 +1,9 @@
-### Description
+#### Task
+In the Drupal 7 site the data is stored as a string in the format \d{10}. This format is a
+shorthand version sometimes used. As part of the upgrade to Drupal 9 the client wants to
+use the full version instead, \d{8}\-\d{4}.
+
+### Solutio
 
 Happiness Migrate module contains migration process
 plugin to transform Sweden Social Security Number(SSN)
